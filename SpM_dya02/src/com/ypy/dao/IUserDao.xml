@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ypy.dao.IUserDao">   <!-- 为了保证唯一，一般写为文件路径 -->
+	
+	<select id="query" resultType="UserModel">  <!-- 这里的id必须与IUserDao.java中的方法名相同 -->
+		select * from t_user
+	</select>
+</mapper>
